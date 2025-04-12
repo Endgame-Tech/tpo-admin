@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+toaster {
+    animation-name: anime-header;
+    animation-duration: 0.5s;
+  }
+@keyframes anime-header {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+  }
+
+  tr{
+    border-bottom: 1px solid #ffffff20;
+  }
+
+  /* Scrollbar styling */
+
+
+::-webkit-scrollbar-track {
+  background: #232323;  /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;  /* color of the scroll thumb */
+ /* roundness of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;  /* color of the scroll thumb on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-color: #363636 #232323;
+}
+
